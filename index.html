@@ -3,28 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./dist/output.css" rel="stylesheet">
-    <title>Translated German Legal Documents</title>
+    <title>New Test</title>
 </head>
 <body>
-    <main>
-        <div>
-            <input type="text" placeholder="Type here" class="input input-bordered input-md w-full max-w-xs" />
-            <input type="text" placeholder="Type here" class="input input-bordered input-md w-full max-w-xs" />
-      </div>
-      <br>
-      <div>
-       <form method="post">
-           <label for="fname">First name:</label><br>
-           <input type="text" id="fname" name="fname" class=".myinput"><br>
-           <label for="lname">Last name:</label><br>
-           <input type="text" id="lname" name="lname"><br>
-           <label for="address">Last name:</label><br>
-           <input type="text" id="address" name="address"><br><br>
-           <input type="submit" value="addressform">
-         </form>
-      </div>
-    </main>
-   <script src="main.js"></script>
+    <section>
+        <article>
+            <form name="userdetailsform" action="">
+                <label for="fnameinput">First name:</label><br>
+                <input type="text" name="fname" id="fnameinput"><br>
+                <label for="lnameinput">Last name:</label><br>
+                <input type="text" name="lname" id="lnameinput"><br>
+                <input type="button" value="Submit" onclick="generatepdf()">
+            </form>
+        </article>
+    </section>
+    <script src="main.js"></script>
 </body>
 </html>
