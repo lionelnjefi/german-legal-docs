@@ -16,7 +16,7 @@ const generatepdf = async () => {
     try {
         const apiUrl = 'https://api.docugenerate.com/v1/document'
         const dataObject = JSON.stringify([{
-            'Name': fullName
+            'Name': [fullName]
         }])
 
         /* -H 'accept: application/json' \
