@@ -3,7 +3,8 @@ const generatepdf = async () => {
 
     const firstName = document.querySelector("#fnameinput").value;
     const laststName = document.querySelector("#lnameinput").value;
-    console.log(firstName, laststName);
+    const fullName = firstName.concat(" ", laststName);
+    console.log(fullName);
 
     /*
     //Alternative
@@ -15,7 +16,7 @@ const generatepdf = async () => {
     try {
         const apiUrl = 'https://api.docugenerate.com/v1/document'
         const dataObject = JSON.stringify([{
-            'Name': firstName
+            'Name': fullName
         }])
 
         /* -H 'accept: application/json' \
