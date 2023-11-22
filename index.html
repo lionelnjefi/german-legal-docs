@@ -3,16 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>New Test</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.5/jspdf.debug.js"></script>
+    <title>Translate German Legal Docs</title>
 </head>
 <body>
     <section>
         <article>
             <form name="userdetailsform" action="">
                 <label for="fnameinput">First name:</label><br>
-                <input type="text" name="fname" id="fnameinput"><br>
+                <input type="text" name="fname" id="fnameinput" value="Lionel"><br>
                 <label for="lnameinput">Last name:</label><br>
-                <input type="text" name="lname" id="lnameinput"><br>
+                <input type="text" name="lname" id="lnameinput" value="Njefi"><br><br>
                 <input type="button" value="Submit" onclick="generatepdf()">
             </form>
         </article>
